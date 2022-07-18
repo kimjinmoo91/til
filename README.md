@@ -1,19 +1,19 @@
 - **WIL** (Weekly I Learn)1주차 **회고** -  
 
 # - **WIL** (Weekly I Learn) 회고 -  
-\n  
+<br>  
 
-\n  
+<br>
 
-\n  
+<br>
 
-\n  
+<br>
 
 
  
 
 ## JWT / API 무엇일까?  
-\n  
+<br>
 ### -JWT-  
 > - JWT :  
 > > JWT(JSON Web Token)란 인증에 필요한 정보들을 암호화시킨 JSON 토큰을 의미한다.  
@@ -34,29 +34,29 @@
    - OAuth의 경우 Facebook, Googe 등 소셜 계정을 이용하여 다른 웹서비스에서도 로그인을 할 수 있다.
    - JWR는 토큰에 대한 기본 정보와 전달할 정보 및 토큰이 검증 됬음을 증명하는 서명 등 필요한 모든 정보를 자체적으로 지니고 있다.
    - Header 와 Payload를 가지고 Signatur를 생성하므로 데이터 위변조를 막을 수 있다.  
-\n  
+<br>
 
-\n  
+<br>
 
-\n  
+<br>
 
-\n  
+<br>
   2. #### 단점
    - 토큰을 탈취당하면 대처하기 어렵다.
    - Payload 자체는 암호화되지 않기 때문에 유저의 중요한 정보는 담을 수 없다.
    - 쿠키 / 세션과 다르게 JWT는 토큰의 길이가 길어, 인증 요청이 많아질 수록 네트워크 부하가 심해진다.  
-\n  
+<br>
 
-\n  
+<br>
 
-\n  
+<br>
 
-\n  
+<br>
   
-\n  
+<br>
 ### **JWT 요소**
-\n  
-\n  
+<br>
+<br>
   - **헤더(Header)**  
     
 
@@ -70,12 +70,12 @@
  <img src =  "https://user-images.githubusercontent.com/97110814/179413438-188f9fde-6958-4ab3-ab73-abef58bcc3f4.png">
 </p>  
   
-\n  
-\n  
+<br>
+<br>
  - **페이로드(Paylord)**  
   
    JWT의 내용이다. 페이로드(Payload)에 있는 속성들을 클레임 셋(Claim Set)이라 부른다. 클레임 셋은 JWT에 대한 내용(토큰 생성자(클라이언트)의 정보, 생성 일시 등)이나 클라이언트와 서버 간 주고 받기로 한 값들로 구성된다.  
-   \n  
+   <br>
    위와 같은 JSON 객체를 문자열로 직렬화하고 Base64 URL-Safe로 인코딩하면 다음과 같이 페이로드를 생성할 수 있다.
    
    <p align="center">
@@ -85,8 +85,8 @@
  <img src =  "https://user-images.githubusercontent.com/97110814/179414458-d39f93d2-f0d4-47ed-9857-52d0cf5faae9.png">
 </p>  
 
-\n  
-\n  
+<br>
+<br>
  - **시그니처(Signature)**  
    
    점(.)을 구분자로 해서 헤더와 페이로드를 합친 문자열을 서명한 값이다. 서명은 헤더의 alg에 정의된 알고리즘과 비밀 키를 이용해 성성하고 Base64 URL-Safe로 인코딩한다.  
@@ -98,7 +98,7 @@
    <p align="center">
  <img src =  "https://user-images.githubusercontent.com/97110814/179416078-0b11be1e-a703-4ec6-bc56-ddaeec68bff0.png">
 </p>  
-\n  
+<br>
 
 ### **JWT** = Header + Paylord + Signature  
 아래와 같이 표현 할 수 있다.
@@ -106,29 +106,29 @@
  <img src =  "https://supertokens.com/static/b0172cabbcd583dd4ed222bdb83fc51a/9af93/jwt-structure.png">
 </p>  
 
-\n  
-\n  
-\n  
-\n  
-\n  
-\n  
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
 ### -API-  
 > - API :  
 > >  API(Application Programming Interface)는 응용 프로그램에서 사용할 수 있도록 운영체제나 프로그래밍 언어가 제공하는 기능을 제어할 수 있게 만든 인터페이스를 뜻한다.  
-\n  
+<br>
 > 아래와 같이 그림으로 이해하기 쉽게 표현 할 수 있다.
 ><p align="center">
  <img src =  "https://blog.wishket.com/wp-content/uploads/2019/10/API-%EC%89%BD%EA%B2%8C-%EC%95%8C%EC%95%84%EB%B3%B4%EA%B8%B0.png">
 </p>  
-\n  
+<br>
 
-\n  
+<br>
 
-\n  
+<br>
 
-\n  
+<br>
 
-\n  
+<br>
 
 #### **API 종류**  
   - private API   
@@ -140,30 +140,30 @@
   - partner API  
     : partner API는 기업이 데이터 공유에 동의하는 특정인들만 사용할 수 있다. 비즈니스 관계에서 사용되는 편이며, 종종 파트너 회사 간에 소프트웨어를 통합하기 위해 사용된다.  
       
-    \n  
+    <br>
     
-    \n  
+    <br>
     
-    \n  
+    <br>
 
 #### **그래서 API는 무슨 일은 한다는거에요?**  
-\n  
+<br>
 
 1.  서버와 데이터베이스에 대한 출입구 역할을 하고,  
 2.  애플리케이션과 기기가 원활하게 통신할 수 있도록 하며,  
 3.  모든 접속을 표준화한다.  
   
-\n  
+<br>
 
-\n  
+<br>
 
-\n  
+<br>
 
-\n  
+<br>
 
-\n  
+<br>
 
-\n  
+<br>
 ## **그래서 배운게 뭔데?**  
 아쉽게도 저런게 있다는 것을 알고, 들어본 것을 찾아보고 읽어 봤기에 무슨 말인지는 알겠지만, 어떻게 어디서 사용하는지까지는 잘 모르겠어.  
 
@@ -171,21 +171,21 @@
  많이 읽어보게 되니 이해는 다 되지 않아도 다시 검색해보거나 사용해보기 위해 찾아볼 때 도움이 많이 될 것 같다. 개념은 알게 되었어. 네 덕이야.
 
 배울 게 많고, 집중과 몰입하기에 너무 좋은 분야야. 하루하루 허투루 보내기엔 너무 아쉬워.  
-\n  
+<br>
 
-\n  
+<br>
 
-\n  
+<br>
 
-\n  
+<br>
 
-\n  
+<br>
 
-\n  
+<br>
 
-\n  
+<br>
 ## **-나는 누구일까-**  
-\n  
+<br>
 
 도 대표 선수출신이며, 서비스계에서 약 5년간 근무했고 근무 중, 개발자를 알게 되어 준비하고 있는 운동하는 무무입니다.  
 백엔드에 빠져 Java를 배우고 있는 입문자입니다~
