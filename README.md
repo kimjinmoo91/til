@@ -1,6 +1,6 @@
-- **WIL** (Weekly I Learn) 2주차 **회고** -
+  # - **WIL** (Weekly I Learn) 2주차 **회고** -
 
-# "OOP" 객체지향 프로그래밍?  
+## "OOP" 객체지향 프로그래밍?  
 <br>
   
 > 객체지향 프로그래밍(Object-Oriented Programming)=OOP
